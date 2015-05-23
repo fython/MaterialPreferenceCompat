@@ -3,6 +3,18 @@
 Help you to use android.support.v7.app.AlertDialog and android.support.v7.widget.SwitchCompat in Preferences including ``EditTextPreference``, ``ListPreference``, ``MultiSelectItemPreference`` and ``SwitchPreference``.
 帮助你在 Preference (包括文本编辑、单选列表、多选列表、开关) 中使用 android.support.v7 包提供的向下兼容。
 
+### Screenshots 屏幕截图
+
+![Kitkat](/art/kitkat.png)
+![KitkatSingleChoice](/art/kitkat-1.png)
+![Lollipop](/art/lollipop.png)
+![LollipopMultiSelect](/art/lollipop-1.png)
+
+### Usage 使用方法
+
+Use ``EditTextPreferenceCompat``, ``ListPreferenceCompat``, ``MultiSelectItemPreferenceCompat`` and ``SwitchPreferenceCompat``  instead of ``EditTextPreference``, ``ListPreference``, ``MultiSelectItemPreference`` and ``SwitchPreference`` directly
+直接用 ``EditTextPreferenceCompat``, ``ListPreferenceCompat``, ``MultiSelectItemPreferenceCompat`` and ``SwitchPreferenceCompat`` 替换 ``EditTextPreference``, ``ListPreference``, ``MultiSelectItemPreference`` and ``SwitchPreference``
+
 ### Notices
 
 Some codes is from Internet.
@@ -18,7 +30,8 @@ Alipay 支付宝: 316643843@qq.com (我很乐意能收到一笔表示支持的小钱233喔)
 
 ### Licenses
 
-``The MIT License (MIT)
+```
+The MIT License (MIT)
 
 Copyright (c) 2015 Fython 某烧饼
 
@@ -38,4 +51,5 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.``
+SOFTWARE.
+```

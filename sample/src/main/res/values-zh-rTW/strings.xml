@@ -1,0 +1,40 @@
+<resources>
+
+	<string name="app_name">MPC 範例</string>
+
+	<string name="category_first">你好，世界！</string>
+	<string name="pref_loli_is_justice">蘿莉即是正義</string>
+	<string name="pref_loli_is_justice_summary_on">是的！蘿莉最棒！</string>
+	<string name="pref_loli_is_justice_summary_off">不！我不歸屬于這個世界。</string>
+
+	<string name="pref_loli_choice">哪個蘿莉你最喜歡?</string>
+	<string-array name="pref_loli_choice_entries">
+		<item>宮內蓮華 (喵帕斯!)</item>
+		<item>神崎·H·亞利亞</item>
+		<item>琴石奈瑠</item>
+		<item>逢阪大河</item>
+	</string-array>
+	<string-array name="pref_loli_choice_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+
+	<string name="pref_type_choice">你喜歡哪種蘿莉?</string>
+	<string-array name="pref_type_choice_entries">
+		<item>雙馬辮</item>
+		<item>萌</item>
+		<item>幼女體型</item>
+		<item>傲嬌</item>
+		<item>獸耳</item>
+	</string-array>
+	<string-array name="pref_type_choice_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+	</string-array>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:key="category_first" android:title="@string/category_first">
+
+		<moe.feng.materialcompat.preference.SwitchPreferenceCompat
+			android:key="loli_is_justice"
+		    android:title="@string/pref_loli_is_justice"
+		    android:defaultValue="true"
+		    android:summaryOn="@string/pref_loli_is_justice_summary_on"
+		    android:summaryOff="@string/pref_loli_is_justice_summary_off"/>
+
+		<moe.feng.materialcompat.preference.ListPreferenceCompat
+			android:key="loli_choice"
+		    android:title="@string/pref_loli_choice"
+		    android:defaultValue="0"
+		    android:entries="@array/pref_loli_choice_entries"
+		    android:entryValues="@array/pref_loli_choice_values"/>
+
+		<moe.feng.materialcompat.preference.MultiSelectListPreferenceCompat
+			android:key="type_choice"
+		    android:title="@string/pref_type_choice"
+		    android:entries="@array/pref_type_choice_entries"
+		    android:entryValues="@array/pref_type_choice_values"/>
+
+	</PreferenceCategory>
+
+</PreferenceScreen>

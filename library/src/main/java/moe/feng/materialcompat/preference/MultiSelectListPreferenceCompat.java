@@ -28,6 +28,7 @@ public class MultiSelectListPreferenceCompat extends MultiSelectListPreference {
 
 	public MultiSelectListPreferenceCompat(Context context) {
 		this(context, null);
+		this.mContext = context;
 	}
 
 	public MultiSelectListPreferenceCompat(Context context, AttributeSet attrs) {
@@ -62,12 +63,9 @@ public class MultiSelectListPreferenceCompat extends MultiSelectListPreference {
 
 	@Override
 	protected void showDialog(Bundle state) {
-		boolean[] b = new boolean[getValues().size()];
+		boolean[] b = new boolean[getEntryValues().length];
 		for (String s : getValues()) {
-			int index = findIndexOfValue(s);
-			if (index >= 0) {
-				b [findIndexOfValue(s)] = true;
-			}
+			b [findIndexOfValue(s)] = findIndexOfValue(s) >= 0;
 		}
 
 		AlertDialog.Builder builder = new AlertDialog.Builder(mContext)

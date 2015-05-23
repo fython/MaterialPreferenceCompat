@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MaterialDialog.iml" filepath="$PROJECT_DIR$/MaterialDialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaterialPreferenceCompat.iml" filepath="$PROJECT_DIR$/MaterialPreferenceCompat.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
     </modules>
   </component>
 </project>

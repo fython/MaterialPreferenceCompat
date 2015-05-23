@@ -1,0 +1,40 @@
+<resources>
+
+	<string name="app_name">MPC Sample</string>
+
+	<string name="category_first">Hello, world!</string>
+	<string name="pref_loli_is_justice">LORI is justice!</string>
+	<string name="pref_loli_is_justice_summary_on">Yes! LORI is best!</string>
+	<string name="pref_loli_is_justice_summary_off">No! I am not the human in this world.</string>
+
+	<string name="pref_loli_choice">Which lori do you like best?</string>
+	<string-array name="pref_loli_choice_entries">
+		<item>Miyauchi Renge (Miao pa su!)</item>
+		<item>Kanzaki H Aria</item>
+		<item>Kotoishi Naru</item>
+		<item>Aisaka Taiga</item>
+	</string-array>
+	<string-array name="pref_loli_choice_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+
+	<string name="pref_type_choice">Which types of lori do you like?</string>
+	<string-array name="pref_type_choice_entries">
+		<item>Double tail</item>
+		<item>Moe</item>
+		<item>Young girls body</item>
+		<item>Playfully</item>
+		<item>Animal ears</item>
+	</string-array>
+	<string-array name="pref_type_choice_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+	</string-array>
+
+</resources>
