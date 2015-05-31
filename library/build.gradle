@@ -1,11 +1,12 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven'
 
 android {
 	compileSdkVersion 22
 	buildToolsVersion "22.0.1"
 
 	defaultConfig {
-		applicationId "moe.feng.materialcompat"
+		// applicationId "moe.feng.materialcompat"
 		minSdkVersion 15
 		targetSdkVersion 22
 		versionCode 1
@@ -23,6 +24,53 @@ android {
 		}
 	}
 }
+
+group = 'moe.feng.materialcompat'
+version = '1.0.0'
+def artifactId = 'library'
+
+def repositoryUrl
+if (has('repoDir')) {
+    repositoryUrl = "file://$repoDir"
+} else {
+    repositoryUrl = "file://$buildDir/repo/"
+}
+
+afterEvaluate { project ->
+    uploadArchives {
+        repositories {
+            mavenDeployer {
+                repository(url: repositoryUrl)
+                pom.artifactId = artifactId
+            }
+        }
+    }
+
+    task androidJavadocs(type: Javadoc) {
+        source = android.sourceSets.main.java.srcDirs.toString()
+        classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+        options.links("http://docs.oracle.com/javase/7/docs/api/");
+        options.linksOffline "http://d.android.com/reference","${android.sdkDirectory}/docs/reference"
+        exclude '**/BuildConfig.java'
+        exclude '**/R.java'
+        failOnError = false
+    }
+
+    task androidJavadocsJar(type: Jar) {
+        classifier = 'javadoc'
+        from androidJavadocs.destinationDir.toString()
+    }
+    task androidSourcesJar(type: Jar) {
+        classifier = 'sources'
+        from android.sourceSets.main.java.toString()
+    }
+
+    artifacts {
+        archives androidSourcesJar
+        archives androidJavadocsJar
+    }
+}
+
 
 dependencies {
 	compile fileTree(dir: 'libs', include: ['*.jar'])
