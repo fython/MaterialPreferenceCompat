@@ -25,7 +25,7 @@ android {
 	}
 }
 
-group = 'MaterialPreferenceCompat'
+group = 'moe.feng.materialcompat'
 version = '1.0.0'
 def artifactId = 'library'
 
